@@ -1,0 +1,68 @@
+.class Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods$4;
+.super Laoc/kingdoms/lukasz/menu_element/textStatic/TextIcon_Resource;
+.source "InGame_Goods.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods;-><init>()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods;
+
+
+# direct methods
+.method constructor <init>(Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods;Ljava/lang/String;IIIII)V
+    .locals 7
+
+    iput-object p1, p0, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods$4;->this$0:Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods;
+
+    move-object v0, p0
+
+    move-object v1, p2
+
+    move v2, p3
+
+    move v3, p4
+
+    move v4, p5
+
+    move v5, p6
+
+    move v6, p7
+
+    invoke-direct/range {v0 .. v6}, Laoc/kingdoms/lukasz/menu_element/textStatic/TextIcon_Resource;-><init>(Ljava/lang/String;IIIII)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public actionElement()V
+    .locals 2
+
+    invoke-virtual {p0}, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods$4;->getCurrent()I
+
+    move-result v0
+
+    sput v0, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods_Provinces;->RESOURCE_ID:I
+
+    const-wide/16 v0, 0x0
+
+    sput-wide v0, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods_Provinces;->lTime:J
+
+    sput-wide v0, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods;->lTime:J
+
+    sget-object v0, Laoc/kingdoms/lukasz/jakowski/Game;->menuManager:Laoc/kingdoms/lukasz/menu/MenuManager;
+
+    invoke-virtual {v0}, Laoc/kingdoms/lukasz/menu/MenuManager;->rebuildInGame_Goods_Provinces()V
+
+    return-void
+.end method

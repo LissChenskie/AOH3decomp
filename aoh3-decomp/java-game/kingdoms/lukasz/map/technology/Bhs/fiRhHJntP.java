@@ -1,0 +1,54 @@
+package aoc.kingdoms.lukasz.map.technology.Bhs;
+
+/* JADX INFO: loaded from: /workspace/tmpdex/classes.dex */
+public class fiRhHJntP {
+    public static String AhkxSdnW;
+    public static String AncXZFMPFxyI;
+    public static String CJDHtQlF;
+    public static String CtIsKoy;
+    public static String DjKkQPwsJEZ;
+    public static String EulqswbvhfxSo;
+    public static String GriSQrRaTwhJxv;
+    public static String JswiTg;
+    public static String KIMIvCgWjdBvvS;
+    public static String LATNUldZASykqGs;
+    public static String LPlouTPzT;
+    public static String LenBbyM;
+    public static String MXKDArjr;
+    public static String NaiksnQVVmovaLK;
+    public static String PJhCbUxpbSyI;
+    public static String RHGOWBXIvUv;
+    public static String RIvKuWbodXvO;
+    public static String RVkRRAtLKQfE;
+    public static String TjkmdN;
+    public static String TzXg;
+    public static String YTlrq;
+    public static String ayIdGU;
+    public static String cMMJFSPJT;
+    public static String fInsXfb;
+    public static String ffHcjZ;
+    public static String gNatWLSYeFhGEH;
+    public static String gQX;
+    public static String gZywxVctpK;
+    public static String gzl;
+    public static String hBjNEce;
+    public static String hCkdGQicvUyit;
+    public static String hZwiApQimJvEAp;
+    public static String hhcCEDOxg;
+    public static String hiLxECO;
+    public static String iUDhttMK;
+    public static String igdw;
+    public static String iiwWszUI;
+    public static String jCbbSOIHFa;
+    public static String jGhNDrAFK;
+    public static String lSxMiiqQzDEIId;
+    public static String mTZHcSsS;
+    public static String myf;
+    public static String nJNhGiucdyUZA;
+    public static String oRG;
+    public static String qjgGzfIRBt;
+    public static String qsekmF;
+    public static String xVSOxSCAfRbLjv;
+    public static String ydSZWYjvwR;
+    public static String zKvruEFnzfL;
+}
