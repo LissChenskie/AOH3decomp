@@ -1,0 +1,64 @@
+.class Laoc/kingdoms/lukasz/menusInGame/InGame_Loan$3;
+.super Laoc/kingdoms/lukasz/menu_element/button/ButtonStatsBudget_Right2;
+.source "InGame_Loan.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Laoc/kingdoms/lukasz/menusInGame/InGame_Loan;-><init>()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Laoc/kingdoms/lukasz/menusInGame/InGame_Loan;
+
+
+# direct methods
+.method constructor <init>(Laoc/kingdoms/lukasz/menusInGame/InGame_Loan;Ljava/lang/String;IIII)V
+    .locals 6
+
+    iput-object p1, p0, Laoc/kingdoms/lukasz/menusInGame/InGame_Loan$3;->this$0:Laoc/kingdoms/lukasz/menusInGame/InGame_Loan;
+
+    move-object v0, p0
+
+    move-object v1, p2
+
+    move v2, p3
+
+    move v3, p4
+
+    move v4, p5
+
+    move v5, p6
+
+    invoke-direct/range {v0 .. v5}, Laoc/kingdoms/lukasz/menu_element/button/ButtonStatsBudget_Right2;-><init>(Ljava/lang/String;IIII)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public setText(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Laoc/kingdoms/lukasz/menu_element/button/ButtonStatsBudget_Right2;->setText(Ljava/lang/String;)V
+
+    sget-object p1, Laoc/kingdoms/lukasz/menu/Colors;->COLOR_TEXT_MODIFIER_NEGATIVE:Lcom/badlogic/gdx/graphics/Color;
+
+    iput-object p1, p0, Laoc/kingdoms/lukasz/menusInGame/InGame_Loan$3;->nColor:Lcom/badlogic/gdx/graphics/Color;
+
+    sget-object p1, Laoc/kingdoms/lukasz/menu/Colors;->COLOR_TEXT_MODIFIER_NEGATIVE_HOVER:Lcom/badlogic/gdx/graphics/Color;
+
+    iput-object p1, p0, Laoc/kingdoms/lukasz/menusInGame/InGame_Loan$3;->nColorH:Lcom/badlogic/gdx/graphics/Color;
+
+    sget-object p1, Laoc/kingdoms/lukasz/menu/Colors;->COLOR_TEXT_MODIFIER_NEGATIVE_ACTIVE:Lcom/badlogic/gdx/graphics/Color;
+
+    iput-object p1, p0, Laoc/kingdoms/lukasz/menusInGame/InGame_Loan$3;->nColorA:Lcom/badlogic/gdx/graphics/Color;
+
+    return-void
+.end method

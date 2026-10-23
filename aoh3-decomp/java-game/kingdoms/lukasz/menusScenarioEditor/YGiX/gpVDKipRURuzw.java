@@ -1,0 +1,58 @@
+package aoc.kingdoms.lukasz.menusScenarioEditor.YGiX;
+
+/* JADX INFO: loaded from: /workspace/tmpdex/classes.dex */
+public class gpVDKipRURuzw {
+    public static String ATWHUuQ;
+    public static String AgzQBuKgdshI;
+    public static String CFlSZk;
+    public static String EtsxjGWVvmnyb;
+    public static String FpTvPHGtv;
+    public static String FrZOaFVElawUT;
+    public static String HZBUbpYraVT;
+    public static String HcIoJQyueKL;
+    public static String JRokfpATExR;
+    public static String LJqcVxZvhAFKUq;
+    public static String LYnbAByh;
+    public static String LeQOyePw;
+    public static String MDzJMGEictg;
+    public static String MXztwwzGvgvEBbM;
+    public static String OSpDusJR;
+    public static String OirXlggdxqUMy;
+    public static String OxJ;
+    public static String PNptrMYLFhUoTc;
+    public static String QIdSORLzhE;
+    public static String QpIOediCT;
+    public static String RypKUoH;
+    public static String TqkSLlxmyL;
+    public static String UARdaqZrN;
+    public static String UYu;
+    public static String VNVsTtDMk;
+    public static String VVHm;
+    public static String VtZ;
+    public static String ZekbaJeGFnl;
+    public static String ZhRWyje;
+    public static String aGJulGakLFnY;
+    public static String agZm;
+    public static String bHdqPKTpssb;
+    public static String cdMERyXIPfNMJ;
+    public static String dXDbnRsXBxLNUs;
+    public static String eoHncKJzDdW;
+    public static String fPT;
+    public static String gguZ;
+    public static String hHWzJTk;
+    public static String mvzrBJuym;
+    public static String nMiRMBcOvUgQc;
+    public static String pWSeyYbCnEh;
+    public static String qJlCdKoFA;
+    public static String qhEBCsbJx;
+    public static String qqZAzldW;
+    public static String quegcjlE;
+    public static String sunfxjKkWNCQf;
+    public static String uAvUDuIECt;
+    public static String vNhTNqF;
+    public static String vZxA;
+    public static String wStWjLc;
+    public static String weZSvK;
+    public static String wsNbYgwXdyaGp;
+    public static String zHY;
+}

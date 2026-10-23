@@ -1,0 +1,248 @@
+.class public Laoc/kingdoms/lukasz/events/triggers/EventTrigger_CivHasResource;
+.super Laoc/kingdoms/lukasz/events/triggers/EventTrigger_Value;
+.source "EventTrigger_CivHasResource.java"
+
+
+# instance fields
+.field public value:I
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
+
+    invoke-direct {p0}, Laoc/kingdoms/lukasz/events/triggers/EventTrigger_Value;-><init>()V
+
+    iput p1, p0, Laoc/kingdoms/lukasz/events/triggers/EventTrigger_CivHasResource;->value:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getImage()I
+    .locals 1
+
+    sget v0, Laoc/kingdoms/lukasz/textures/Images;->goods:I
+
+    return v0
+.end method
+
+.method public getText()Ljava/lang/String;
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v1, Laoc/kingdoms/lukasz/jakowski/Game;->lang:Laoc/kingdoms/lukasz/jakowski/LanguageManager;
+
+    const-string v2, "HasTheResource"
+
+    invoke-virtual {v1, v2}, Laoc/kingdoms/lukasz/jakowski/LanguageManager;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ": "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getText2()Ljava/lang/String;
+    .locals 2
+
+    iget v0, p0, Laoc/kingdoms/lukasz/events/triggers/EventTrigger_CivHasResource;->value:I
+
+    if-ltz v0, :cond_0
+
+    sget v1, Laoc/kingdoms/lukasz/map/ResourcesManager;->iResourcesSize:I
+
+    if-ge v0, v1, :cond_0
+
+    iget v0, p0, Laoc/kingdoms/lukasz/events/triggers/EventTrigger_CivHasResource;->value:I
+
+    invoke-static {v0}, Laoc/kingdoms/lukasz/map/ResourcesManager;->getResourceName(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_0
+    sget-object v0, Laoc/kingdoms/lukasz/jakowski/Game;->lang:Laoc/kingdoms/lukasz/jakowski/LanguageManager;
+
+    const-string v1, "None"
+
+    invoke-virtual {v0, v1}, Laoc/kingdoms/lukasz/jakowski/LanguageManager;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getText3()Ljava/lang/String;
+    .locals 4
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    sget-object v2, Laoc/kingdoms/lukasz/jakowski/Game;->player:Laoc/kingdoms/lukasz/jakowski/Player/Player;
+
+    iget v2, v2, Laoc/kingdoms/lukasz/jakowski/Player/Player;->iCivID:I
+
+    invoke-static {v2}, Laoc/kingdoms/lukasz/jakowski/Game;->getCiv(I)Laoc/kingdoms/lukasz/map/civilization/Civilization;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Laoc/kingdoms/lukasz/map/civilization/Civilization;->getNumOfProvinces()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_1
+
+    sget-object v2, Laoc/kingdoms/lukasz/jakowski/Game;->player:Laoc/kingdoms/lukasz/jakowski/Player/Player;
+
+    iget v2, v2, Laoc/kingdoms/lukasz/jakowski/Player/Player;->iCivID:I
+
+    invoke-static {v2}, Laoc/kingdoms/lukasz/jakowski/Game;->getCiv(I)Laoc/kingdoms/lukasz/map/civilization/Civilization;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Laoc/kingdoms/lukasz/map/civilization/Civilization;->getProvinceID(I)I
+
+    move-result v2
+
+    invoke-static {v2}, Laoc/kingdoms/lukasz/jakowski/Game;->getProvince(I)Laoc/kingdoms/lukasz/map/province/Province;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Laoc/kingdoms/lukasz/map/province/Province;->getResourceID()I
+
+    move-result v2
+
+    iget v3, p0, Laoc/kingdoms/lukasz/events/triggers/EventTrigger_CivHasResource;->value:I
+
+    if-ne v2, v3, :cond_0
+
+    sget-object v2, Laoc/kingdoms/lukasz/jakowski/Game;->player:Laoc/kingdoms/lukasz/jakowski/Player/Player;
+
+    iget v2, v2, Laoc/kingdoms/lukasz/jakowski/Player/Player;->iCivID:I
+
+    invoke-static {v2}, Laoc/kingdoms/lukasz/jakowski/Game;->getCiv(I)Laoc/kingdoms/lukasz/map/civilization/Civilization;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Laoc/kingdoms/lukasz/map/civilization/Civilization;->getProvinceID(I)I
+
+    move-result v2
+
+    invoke-static {v2}, Laoc/kingdoms/lukasz/map/ResourcesManager;->getProducedGoods(I)F
+
+    move-result v2
+
+    add-float/2addr v0, v2
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, " ["
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    sget-object v2, Laoc/kingdoms/lukasz/jakowski/Game;->lang:Laoc/kingdoms/lukasz/jakowski/LanguageManager;
+
+    const-string v3, "Currently"
+
+    invoke-virtual {v2, v3}, Laoc/kingdoms/lukasz/jakowski/LanguageManager;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, ": "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const/16 v2, 0x64
+
+    invoke-static {v0, v2}, Laoc/kingdoms/lukasz/jakowski/CFG;->getPrecision2(FI)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, "]"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public outCondition(II)Z
+    .locals 1
+
+    const/4 p2, 0x0
+
+    :try_start_0
+    invoke-static {p1}, Laoc/kingdoms/lukasz/jakowski/Game;->getCiv(I)Laoc/kingdoms/lukasz/map/civilization/Civilization;
+
+    move-result-object p1
+
+    iget v0, p0, Laoc/kingdoms/lukasz/events/triggers/EventTrigger_CivHasResource;->value:I
+
+    invoke-virtual {p1, v0}, Laoc/kingdoms/lukasz/map/civilization/Civilization;->getGoodsProduced(I)I
+
+    move-result p1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    int-to-float p1, p1
+
+    const/high16 v0, 0x3e800000    # 0.25f
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_0
+
+    const/4 p2, 0x1
+
+    :cond_0
+    return p2
+
+    :catch_0
+    move-exception p1
+
+    invoke-static {p1}, Laoc/kingdoms/lukasz/jakowski/CFG;->exceptionStack(Ljava/lang/Throwable;)V
+
+    return p2
+.end method

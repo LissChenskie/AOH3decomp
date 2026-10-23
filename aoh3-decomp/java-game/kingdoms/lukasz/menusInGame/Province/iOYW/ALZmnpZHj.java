@@ -1,0 +1,55 @@
+package aoc.kingdoms.lukasz.menusInGame.Province.iOYW;
+
+/* JADX INFO: loaded from: /workspace/tmpdex/classes.dex */
+public class ALZmnpZHj {
+    public static String CShLAusXK;
+    public static String CifUAzstzxGcOx;
+    public static String FlClROsXqQslly;
+    public static String HNtjifn;
+    public static String HhPN;
+    public static String HyLsabmVyBUm;
+    public static String JHT;
+    public static String JlEwLTeu;
+    public static String LFgDTlRrDC;
+    public static String LjqmvzhUUld;
+    public static String MJKOQBcChVcJzJD;
+    public static String NHfGRtmMazjeRHj;
+    public static String PYbsDSmI;
+    public static String PoAAoZWNcWpNeJ;
+    public static String PpgYTLloRXJ;
+    public static String QZgwgPgxV;
+    public static String RKZCmkCr;
+    public static String SJLWA;
+    public static String SwbyCNfc;
+    public static String VOm;
+    public static String WtNvVQjICIcs;
+    public static String XicGJ;
+    public static String YJcNrjnZahavaLR;
+    public static String YPlowgjaqxek;
+    public static String YStrCgBHxlf;
+    public static String aGUJyHjahfjE;
+    public static String cfITkcHDBXMXqJ;
+    public static String cuLH;
+    public static String dEbRb;
+    public static String dMo;
+    public static String iWVHqTqkSbpa;
+    public static String jJnROQdxU;
+    public static String luam;
+    public static String mRHmsLQTq;
+    public static String nXSoYf;
+    public static String nfOpYall;
+    public static String pDcaYX;
+    public static String qDUr;
+    public static String qZe;
+    public static String reuYdg;
+    public static String rirBAWhQWKIv;
+    public static String sYqHnCmfxpXdK;
+    public static String uHmHeiNT;
+    public static String ughMvOMND;
+    public static String vYLGeqfQiJE;
+    public static String vsEdSVPwWkT;
+    public static String wQBebxnK;
+    public static String yxgm;
+    public static String zLzUpKCsKEdM;
+    public static String zdsymWwnEc;
+}

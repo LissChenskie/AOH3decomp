@@ -1,0 +1,54 @@
+package aoc.kingdoms.lukasz.jakowski.AI.Values.nvwi;
+
+/* JADX INFO: loaded from: /workspace/tmpdex/classes.dex */
+public class cIUGJCqyPXfp {
+    public static String AYxWJtGILcUwZ;
+    public static String CNB;
+    public static String EcXXS;
+    public static String FbapPnsRfLRX;
+    public static String FqyCVxeiaf;
+    public static String Fsc;
+    public static String GFjioEv;
+    public static String GSHDvnovdL;
+    public static String HZCSJBq;
+    public static String MphfjcrlfjUvXGg;
+    public static String MwNbLiWpCdwE;
+    public static String OUgmdlkvLTsJN;
+    public static String PGBufuUwkGW;
+    public static String PPewbl;
+    public static String PyFxntogaNfwWzy;
+    public static String QckreoFll;
+    public static String RMvcVroPjLDIddZ;
+    public static String RSgDGeADszq;
+    public static String UjVryacT;
+    public static String VUS;
+    public static String VlRpRfdRNJczY;
+    public static String WYgFflgueMgSosA;
+    public static String YqWO;
+    public static String ZqATLD;
+    public static String anVpikUidj;
+    public static String cGx;
+    public static String dlwfzYOf;
+    public static String egSc;
+    public static String eugnj;
+    public static String fAQvKQ;
+    public static String fCJWfR;
+    public static String hfiVuYVaun;
+    public static String iQUQEd;
+    public static String ijJzzzqh;
+    public static String imGadda;
+    public static String lwoc;
+    public static String mYPNktjPIo;
+    public static String mgZoHEKOMiR;
+    public static String olFMiMbyNxLaKaX;
+    public static String qCMgffWpK;
+    public static String rECKr;
+    public static String rLQBdQlDMyeueG;
+    public static String ryjCPeZzG;
+    public static String tSzLUi;
+    public static String uPKThwZVBr;
+    public static String ubrlHplpCtTaPXS;
+    public static String vllgSZQtupeJ;
+    public static String wFGREVi;
+    public static String yTEWXPRggjWKlFA;
+}

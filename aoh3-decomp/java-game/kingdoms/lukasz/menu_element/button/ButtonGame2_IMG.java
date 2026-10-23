@@ -1,0 +1,97 @@
+package aoc.kingdoms.lukasz.menu_element.button;
+
+import aoc.kingdoms.lukasz.jakowski.CFG;
+import aoc.kingdoms.lukasz.jakowski.Renderer.Renderer;
+import aoc.kingdoms.lukasz.textures.ImageManager;
+import aoc.kingdoms.lukasz.textures.Images;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+/* JADX INFO: loaded from: /workspace/tmpdex/classes.dex */
+public class ButtonGame2_IMG extends Button {
+    protected static final int ANIMATION_T = 1000;
+    protected static int animationState;
+    public static Color colorGradient = new Color(0.09803922f, 0.15686275f, 0.23529412f, 0.4f);
+    public static Color colorGradientHover = new Color(0.19607843f, 0.13725491f, 0.11764706f, 0.75f);
+    private static final Color colorLine = new Color(0.5176471f, 0.43529412f, 0.25882354f, 0.55f);
+    protected static long lTimeAnimation;
+    public int iCurrent = 0;
+    public int imgID;
+
+    public ButtonGame2_IMG(String str, int i, int i2, int i3, int i4, int i5, boolean z, int i6) {
+        init(str, i, i2, i3, i4, i5, CFG.BUTTON_HEIGHT, z, true, false, false);
+        this.imgID = i6;
+    }
+
+    protected static final Color getColorLine() {
+        return colorLine;
+    }
+
+    @Override // aoc.kingdoms.lukasz.menu_element.button.Button
+    protected void drawButtonBG(SpriteBatch spriteBatch, int i, int i2, boolean z) {
+        int i3;
+        if ((z || getIsHovered()) && getClickable()) {
+            Renderer.drawBox(spriteBatch, getButtonBG_Active(), getPosX() + i, getPosY() + i2, getWidth(), getHeight(), 1.0f);
+            spriteBatch.setColor(colorGradientHover);
+        } else {
+            Renderer.drawBox(spriteBatch, getButtonBG(), getPosX() + i, getPosY() + i2, getWidth(), getHeight(), 1.0f);
+            spriteBatch.setColor(colorGradient);
+        }
+        Images.gradientXY.draw(spriteBatch, getPosX() + i, getPosY() + 2 + i2, getWidth(), getHeight() - 4);
+        spriteBatch.setColor(new Color(0.0f, 0.0f, 0.0f, 0.35f));
+        Images.gradientFull.draw(spriteBatch, getPosX() + i, ((getPosY() + getHeight()) - 3) + i2, getWidth(), 1);
+        spriteBatch.setColor(Color.WHITE);
+        if (getClickable() && getIsHovered() && (i3 = animationState) >= 0) {
+            if (i3 == 0) {
+                float fMin = Math.min(((CFG.currentTimeMillis - lTimeAnimation) * 1.0f) / 1000.0f, 1.0f);
+                spriteBatch.setColor(getColorLine());
+                Images.line_32_off1.draw(spriteBatch, getPosX() + CFG.PADDING + i, getPosY() + 1 + i2, (int) ((getWidth() - (CFG.PADDING * 2)) * fMin), 1);
+                Images.line_32_off1.draw(spriteBatch, getPosX() + CFG.PADDING + i, ((getPosY() + getHeight()) - 2) + i2, (int) ((getWidth() - (CFG.PADDING * 2)) * fMin), 1);
+                if (lTimeAnimation < CFG.currentTimeMillis - 1000) {
+                    animationState++;
+                    lTimeAnimation = CFG.currentTimeMillis;
+                }
+            } else {
+                float fMin2 = Math.min(((CFG.currentTimeMillis - lTimeAnimation) * 1.0f) / 1000.0f, 1.0f);
+                spriteBatch.setColor(getColorLine());
+                Images.line_32_off1.draw(spriteBatch, getPosX() + CFG.PADDING + ((int) ((getWidth() - (CFG.PADDING * 2)) * fMin2)) + i, getPosY() + 1 + i2, (getWidth() - (CFG.PADDING * 2)) - ((int) ((getWidth() - (CFG.PADDING * 2)) * fMin2)), 1);
+                Images.line_32_off1.draw(spriteBatch, getPosX() + CFG.PADDING + ((int) ((getWidth() - (CFG.PADDING * 2)) * fMin2)) + i, ((getPosY() + getHeight()) - 2) + i2, (getWidth() - (CFG.PADDING * 2)) - ((int) ((getWidth() - (CFG.PADDING * 2)) * fMin2)), 1);
+                if (lTimeAnimation < CFG.currentTimeMillis - 1000) {
+                    animationState = 0;
+                    lTimeAnimation = CFG.currentTimeMillis;
+                }
+            }
+            spriteBatch.setColor(Color.WHITE);
+        }
+    }
+
+    @Override // aoc.kingdoms.lukasz.menu_element.button.Button
+    protected void drawText(SpriteBatch spriteBatch, int i, int i2, boolean z) {
+        ImageManager.getImage(this.imgID).draw(spriteBatch, ((getPosX() + (getWidth() / 2)) - (ImageManager.getImage(this.imgID).getWidth() / 2)) + i, ((getPosY() + (getHeight() / 2)) - (ImageManager.getImage(this.imgID).getHeight() / 2)) + i2);
+    }
+
+    public int getButtonBG() {
+        return Images.buttonGame;
+    }
+
+    public int getButtonBG_Active() {
+        return Images.buttonGameH;
+    }
+
+    @Override // aoc.kingdoms.lukasz.menu_element.MenuElement
+    public int getCurrent() {
+        return this.iCurrent;
+    }
+
+    @Override // aoc.kingdoms.lukasz.menu_element.MenuElement
+    public void setCurrent(int i) {
+        this.iCurrent = i;
+    }
+
+    @Override // aoc.kingdoms.lukasz.menu_element.MenuElement
+    public void setIsHovered(boolean z) {
+        super.setIsHovered(z);
+        lTimeAnimation = CFG.currentTimeMillis;
+        animationState = 0;
+    }
+}

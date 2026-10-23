@@ -1,0 +1,165 @@
+.class public Laoc/kingdoms/lukasz/events/outcome/province/EventOutcome_Province_Religion_All;
+.super Laoc/kingdoms/lukasz/events/outcome/EventOutcome;
+.source "EventOutcome_Province_Religion_All.java"
+
+
+# instance fields
+.field public value:I
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
+
+    invoke-direct {p0}, Laoc/kingdoms/lukasz/events/outcome/EventOutcome;-><init>()V
+
+    iput p1, p0, Laoc/kingdoms/lukasz/events/outcome/province/EventOutcome_Province_Religion_All;->value:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getImage()I
+    .locals 1
+
+    sget v0, Laoc/kingdoms/lukasz/textures/Images;->religion:I
+
+    return v0
+.end method
+
+.method public getStringLeft()Ljava/lang/String;
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v1, Laoc/kingdoms/lukasz/jakowski/Game;->lang:Laoc/kingdoms/lukasz/jakowski/LanguageManager;
+
+    const-string v2, "Religion"
+
+    invoke-virtual {v1, v2}, Laoc/kingdoms/lukasz/jakowski/LanguageManager;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ": "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getStringRight()Ljava/lang/String;
+    .locals 2
+
+    :try_start_0
+    sget-object v0, Laoc/kingdoms/lukasz/jakowski/Game;->religionManager:Laoc/kingdoms/lukasz/map/ReligionManager;
+
+    iget v1, p0, Laoc/kingdoms/lukasz/events/outcome/province/EventOutcome_Province_Religion_All;->value:I
+
+    invoke-virtual {v0, v1}, Laoc/kingdoms/lukasz/map/ReligionManager;->getReligion(I)Laoc/kingdoms/lukasz/map/ReligionManager$Religion;
+
+    move-result-object v0
+
+    iget-object v0, v0, Laoc/kingdoms/lukasz/map/ReligionManager$Religion;->Name:Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    invoke-static {v0}, Laoc/kingdoms/lukasz/jakowski/CFG;->exceptionStack(Ljava/lang/Throwable;)V
+
+    const-string v0, ""
+
+    return-object v0
+.end method
+
+.method public getStringRight2(I)Ljava/lang/String;
+    .locals 1
+
+    sget-object p1, Laoc/kingdoms/lukasz/jakowski/Game;->lang:Laoc/kingdoms/lukasz/jakowski/LanguageManager;
+
+    const-string v0, "AllProvinces"
+
+    invoke-virtual {p1, v0}, Laoc/kingdoms/lukasz/jakowski/LanguageManager;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public updateCiv(II)V
+    .locals 2
+
+    const/4 p2, 0x0
+
+    :goto_0
+    :try_start_0
+    invoke-static {p1}, Laoc/kingdoms/lukasz/jakowski/Game;->getCiv(I)Laoc/kingdoms/lukasz/map/civilization/Civilization;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Laoc/kingdoms/lukasz/map/civilization/Civilization;->getNumOfProvinces()I
+
+    move-result v0
+
+    if-ge p2, v0, :cond_0
+
+    invoke-static {p1}, Laoc/kingdoms/lukasz/jakowski/Game;->getCiv(I)Laoc/kingdoms/lukasz/map/civilization/Civilization;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p2}, Laoc/kingdoms/lukasz/map/civilization/Civilization;->getProvinceID(I)I
+
+    move-result v0
+
+    invoke-static {v0}, Laoc/kingdoms/lukasz/jakowski/Game;->getProvince(I)Laoc/kingdoms/lukasz/map/province/Province;
+
+    move-result-object v0
+
+    iget v1, p0, Laoc/kingdoms/lukasz/events/outcome/province/EventOutcome_Province_Religion_All;->value:I
+
+    invoke-virtual {v0, v1}, Laoc/kingdoms/lukasz/map/province/Province;->setReligion(I)V
+
+    invoke-static {p1}, Laoc/kingdoms/lukasz/jakowski/Game;->getCiv(I)Laoc/kingdoms/lukasz/map/civilization/Civilization;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p2}, Laoc/kingdoms/lukasz/map/civilization/Civilization;->getProvinceID(I)I
+
+    move-result v0
+
+    invoke-static {v0}, Laoc/kingdoms/lukasz/jakowski/Game;->getProvince(I)Laoc/kingdoms/lukasz/map/province/Province;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Laoc/kingdoms/lukasz/map/province/Province;->updateAfterReligionConversion()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    add-int/lit8 p2, p2, 0x1
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    invoke-static {p1}, Laoc/kingdoms/lukasz/jakowski/CFG;->exceptionStack(Ljava/lang/Throwable;)V
+
+    :cond_0
+    return-void
+.end method
