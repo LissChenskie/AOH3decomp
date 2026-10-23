@@ -1,0 +1,6 @@
+target/
+android/build/
+*.apk
+*.idsig
+*.so
+__pycache__/

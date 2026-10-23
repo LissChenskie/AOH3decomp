@@ -1,0 +1,8 @@
+[package]
+name = "hoi-sim"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+hoi-core = { path = "../hoi-core" }
