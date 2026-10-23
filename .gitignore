@@ -1,2 +1,3 @@
 *.bin
 hoi4-rust/
+hoi4-rust/target/
