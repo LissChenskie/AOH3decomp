@@ -22,6 +22,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private native void rust_zoom(float factor);
     private native void rust_swipe(int dir);
     private native int  rust_back();
+    private native int  rust_state();
 
     private SurfaceView sv;
     private Bitmap bmp;
@@ -37,10 +38,13 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         setContentView(sv = new SurfaceView(this));
         sv.getHolder().addCallback(this);
 
-        byte[] map = loadAsset("world.mapbin");
-        if (map != null) rust_init(map);
+        try {
+            byte[] map = loadAsset("world.mapbin");
+            if (map == null || map.length == 0) map = new byte[0];
+            rust_init(map);
+        } catch (Throwable t) { /* без карты приложение всё равно стартует: меню покажет NO MAP */ }
 
-        renderThread = new Thread(this::loop);
+        renderThread = new Thread(new Runnable() { public void run() { loop(); } });
         renderThread.start();
     }
 
@@ -67,7 +71,9 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 canvas = new Canvas(bmp);
                 rust_resize(w, h);
             }
-            byte[] px = rust_get_pixels();
+            if (rust_state() == 1) { finish(); return; }
+            byte[] px;
+            try { px = rust_get_pixels(); } catch (Throwable t) { sleep(500); continue; }
             if (px != null && px.length >= w * h * 2) {
                 bmp.setPixels(toArgb(px, w * h), 0, w, 0, 0, w, h);
                 Canvas screen = sv.getHolder().lockCanvas();
