@@ -1,0 +1,56 @@
+package aoc.kingdoms.lukasz.map.plague.KMTV;
+
+/* JADX INFO: loaded from: /workspace/tmpdex/classes.dex */
+public class fTNtCctcBZcqKK {
+    public static String BIAbOXpHCoC;
+    public static String DHncjUB;
+    public static String DPrdSybMOam;
+    public static String EDapJagr;
+    public static String EVJZP;
+    public static String Erh;
+    public static String FLeljiHLJSgyzi;
+    public static String FblSb;
+    public static String FfTJTnyWzDW;
+    public static String FthFwTpMWPn;
+    public static String IKwXmWMrVvSsq;
+    public static String ITxFGh;
+    public static String JyuBzJnHcBGrMDQ;
+    public static String MMHgRrpnSan;
+    public static String NvgpdHfd;
+    public static String OrpkDbHmSd;
+    public static String PJjxIF;
+    public static String PMtWF;
+    public static String SDSA;
+    public static String TBBjdveechMS;
+    public static String TfRMZZQicYb;
+    public static String UzPaVeOIn;
+    public static String VAz;
+    public static String VXAH;
+    public static String WBl;
+    public static String WQDhZxGmp;
+    public static String WuPDRocO;
+    public static String WzcAvGfaibZ;
+    public static String YJm;
+    public static String ZCGPBgxf;
+    public static String ZYBzNoNLPgmfNTv;
+    public static String ZwsQXPtSaCokNm;
+    public static String agfyabo;
+    public static String ccVIDYULSvz;
+    public static String ejg;
+    public static String euxb;
+    public static String hMEN;
+    public static String kCBtt;
+    public static String mguAZqbpI;
+    public static String mqzixiaJDDtJK;
+    public static String osPBjSX;
+    public static String ozaWi;
+    public static String pNapv;
+    public static String qgALRtYpYFsF;
+    public static String rjIzHqjr;
+    public static String rvseNEJlej;
+    public static String sMI;
+    public static String sTLNdfbT;
+    public static String txmTZOAm;
+    public static String xxQWMLWgqXA;
+    public static String zDohjhxaUcYgOdG;
+}

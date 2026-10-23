@@ -1,0 +1,104 @@
+.class Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_GoodsMarket$15;
+.super Laoc/kingdoms/lukasz/menu_element/textStatic/Text_StaticGoods_ProgressBar;
+.source "InGame_GoodsMarket.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_GoodsMarket;-><init>()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_GoodsMarket;
+
+
+# direct methods
+.method constructor <init>(Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_GoodsMarket;Ljava/lang/String;IIIIIIFIZ)V
+    .locals 12
+
+    move-object v11, p0
+
+    move-object v0, p1
+
+    iput-object v0, v11, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_GoodsMarket$15;->this$0:Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_GoodsMarket;
+
+    move-object v0, p0
+
+    move-object v1, p2
+
+    move v2, p3
+
+    move/from16 v3, p4
+
+    move/from16 v4, p5
+
+    move/from16 v5, p6
+
+    move/from16 v6, p7
+
+    move/from16 v7, p8
+
+    move/from16 v8, p9
+
+    move/from16 v9, p10
+
+    move/from16 v10, p11
+
+    invoke-direct/range {v0 .. v10}, Laoc/kingdoms/lukasz/menu_element/textStatic/Text_StaticGoods_ProgressBar;-><init>(Ljava/lang/String;IIIIIIFIZ)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public actionElement()V
+    .locals 2
+
+    invoke-virtual {p0}, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_GoodsMarket$15;->getCurrent()I
+
+    move-result v0
+
+    sput v0, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods_LargestProducers;->RESOURCE_ID:I
+
+    const-wide/16 v0, 0x0
+
+    sput-wide v0, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_Goods_LargestProducers;->lTime:J
+
+    sput-wide v0, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_GoodsMarket;->lTime:J
+
+    sget-object v0, Laoc/kingdoms/lukasz/jakowski/Game;->menuManager:Laoc/kingdoms/lukasz/menu/MenuManager;
+
+    invoke-virtual {v0}, Laoc/kingdoms/lukasz/menu/MenuManager;->rebuildInGame_Goods_LargestProducers()V
+
+    return-void
+.end method
+
+.method public buildElementHover()V
+    .locals 2
+
+    invoke-virtual {p0}, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_GoodsMarket$15;->getCurrent()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Laoc/kingdoms/lukasz/menu_element/textStatic/Text_StaticBG_LargestProducer;->getHoverLargestProducers(IZ)Laoc/kingdoms/lukasz/menu_element/menuElementHover/MenuElement_Hover;
+
+    move-result-object v0
+
+    iput-object v0, p0, Laoc/kingdoms/lukasz/menusInGame/Goods/InGame_GoodsMarket$15;->menuElementHover:Laoc/kingdoms/lukasz/menu_element/menuElementHover/MenuElement_Hover;
+
+    return-void
+.end method
+
+.method public drawBG(Lcom/badlogic/gdx/graphics/g2d/SpriteBatch;IIZ)V
+    .locals 0
+
+    return-void
+.end method

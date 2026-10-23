@@ -1,0 +1,18 @@
+[package]
+name = "hoi-app"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+hoi-core = { path = "../hoi-core" }
+hoi-sim = { path = "../hoi-sim" }
+hoi-map = { path = "../hoi-map" }
+
+[[bin]]
+name = "ironfront"
+path = "src/main.rs"
+
+[lib]
+name = "ironfront"
+crate-type = ["cdylib", "rlib"]

@@ -1,0 +1,66 @@
+.class Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits$5;
+.super Laoc/kingdoms/lukasz/menu/menuTitle/MenuTitleIMG_FlagCenter;
+.source "InGame_ReorganizeUnits.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits;-><init>()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits;
+
+
+# direct methods
+.method constructor <init>(Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits;Ljava/lang/String;Ljava/lang/String;ZZI)V
+    .locals 6
+
+    iput-object p1, p0, Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits$5;->this$0:Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits;
+
+    move-object v0, p0
+
+    move-object v1, p2
+
+    move-object v2, p3
+
+    move v3, p4
+
+    move v4, p5
+
+    move v5, p6
+
+    invoke-direct/range {v0 .. v5}, Laoc/kingdoms/lukasz/menu/menuTitle/MenuTitleIMG_FlagCenter;-><init>(Ljava/lang/String;Ljava/lang/String;ZZI)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getFlagCivID()I
+    .locals 1
+
+    sget-object v0, Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits;->armyLeft:Laoc/kingdoms/lukasz/map/army/ArmyDivision;
+
+    iget v0, v0, Laoc/kingdoms/lukasz/map/army/ArmyDivision;->civID:I
+
+    return v0
+.end method
+
+.method public getTime()J
+    .locals 2
+
+    iget-object v0, p0, Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits$5;->this$0:Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits;
+
+    invoke-static {v0}, Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits;->access$000(Laoc/kingdoms/lukasz/menusInGame/InGame_ReorganizeUnits;)J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method

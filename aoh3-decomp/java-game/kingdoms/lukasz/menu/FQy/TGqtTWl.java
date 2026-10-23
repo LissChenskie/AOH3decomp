@@ -1,0 +1,57 @@
+package aoc.kingdoms.lukasz.menu.FQy;
+
+/* JADX INFO: loaded from: /workspace/tmpdex/classes.dex */
+public class TGqtTWl {
+    public static String ALQNMy;
+    public static String AMJs;
+    public static String ApmGi;
+    public static String DJM;
+    public static String EDlphNznut;
+    public static String GIaDvyMAR;
+    public static String HPtcAKdVoldyh;
+    public static String IzTCpR;
+    public static String JVJkrm;
+    public static String JVU;
+    public static String KpBYfIaRVkrjE;
+    public static String OFYJrQEko;
+    public static String PCuIZpipLFPuj;
+    public static String Ptxgg;
+    public static String RXvqkUa;
+    public static String RrvpAofaN;
+    public static String THCvT;
+    public static String TJLCjOqmZIT;
+    public static String TVSIwprfgzoBXL;
+    public static String XSJrHT;
+    public static String YpCt;
+    public static String ZnU;
+    public static String bgMayyYaxVhH;
+    public static String biMneecpJWFiR;
+    public static String dIRDloaK;
+    public static String fKdruaafwG;
+    public static String fcQRjv;
+    public static String iVQ;
+    public static String iwtlJQxdyibtzWL;
+    public static String kDXMjWGvVdjXwYm;
+    public static String kEoMhbF;
+    public static String kqe;
+    public static String kuBKwp;
+    public static String kwmTKmQtTWwP;
+    public static String lhDLZN;
+    public static String mmDKkQTiSbkU;
+    public static String mzNWErbXIPdHOo;
+    public static String nAIVydc;
+    public static String okYoPpdSCbqY;
+    public static String piC;
+    public static String quGh;
+    public static String tATahIlyn;
+    public static String tHHhdIKMHg;
+    public static String twFAfUiQXIjHEo;
+    public static String uGtlvA;
+    public static String xGKeuWo;
+    public static String xPIoBXa;
+    public static String xWAP;
+    public static String xmOO;
+    public static String yTZiJGjJ;
+    public static String zPT;
+    public static String zsIJll;
+}

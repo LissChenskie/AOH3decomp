@@ -1,0 +1,53 @@
+package aoc.kingdoms.lukasz.map.allianceHRE.JgPF;
+
+/* JADX INFO: loaded from: /workspace/tmpdex/classes.dex */
+public class HTGgowNjn {
+    public static String BgXoYrwDbq;
+    public static String DDFvcrxUEDipk;
+    public static String DPZVeSoCvTlEGO;
+    public static String FDaCL;
+    public static String INxKaVVeUhOcTU;
+    public static String IQdjj;
+    public static String JhEpa;
+    public static String JjTsLITdA;
+    public static String KHyHimEYzOOo;
+    public static String KfPNcukKYg;
+    public static String LEIVvmYTPCVRQzN;
+    public static String MJjzh;
+    public static String NCalbyVafDlJvAA;
+    public static String NacWVnYgAWtvu;
+    public static String NzlabTc;
+    public static String OpXWGecpohIZcu;
+    public static String PiAMdTYrpCUA;
+    public static String PqX;
+    public static String RjICUOzDsdapp;
+    public static String UkCWKlIfWhUOnU;
+    public static String WnBkFSsJc;
+    public static String aoSf;
+    public static String bEMrRwDmDLscnjT;
+    public static String eOmDtGlXTjQ;
+    public static String fZyZlzVA;
+    public static String fbswETIzr;
+    public static String fpTpltvX;
+    public static String gvjSBoytFDMKB;
+    public static String hbTJrmWykWoorQ;
+    public static String jrwgGIZlLboHHOV;
+    public static String kLUzEFDcPPVzXx;
+    public static String kLoN;
+    public static String lBFMRmTLgPdStHQ;
+    public static String lBTWCTYNpv;
+    public static String mDuGbakAyK;
+    public static String mMKNtJObHqI;
+    public static String mqBmxCBhQyJRl;
+    public static String nRaiSAK;
+    public static String ndPNm;
+    public static String oOqnvoFciIFizBL;
+    public static String pSwwrRTtypNxVT;
+    public static String pmKVMHSgyoO;
+    public static String rDAgdUhKcuPImSR;
+    public static String sQyAmwPDhMSAT;
+    public static String tKKi;
+    public static String vFfZBmSTpXBEQi;
+    public static String xQpIiqZ;
+    public static String yCmDHydolI;
+}

@@ -1,0 +1,45 @@
+.class Laoc/kingdoms/lukasz/map/clouds/CloudsManager$3;
+.super Ljava/lang/Object;
+.source "CloudsManager.java"
+
+# interfaces
+.implements Laoc/kingdoms/lukasz/map/clouds/CloudsManager$CloudsInterface;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Laoc/kingdoms/lukasz/map/clouds/CloudsManager;->updateCloudsInterface()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Laoc/kingdoms/lukasz/map/clouds/CloudsManager;
+
+
+# direct methods
+.method constructor <init>(Laoc/kingdoms/lukasz/map/clouds/CloudsManager;)V
+    .locals 0
+
+    iput-object p1, p0, Laoc/kingdoms/lukasz/map/clouds/CloudsManager$3;->this$0:Laoc/kingdoms/lukasz/map/clouds/CloudsManager;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public drawCloudsInterface(Lcom/badlogic/gdx/graphics/g2d/SpriteBatch;)V
+    .locals 1
+
+    iget-object v0, p0, Laoc/kingdoms/lukasz/map/clouds/CloudsManager$3;->this$0:Laoc/kingdoms/lukasz/map/clouds/CloudsManager;
+
+    invoke-virtual {v0, p1}, Laoc/kingdoms/lukasz/map/clouds/CloudsManager;->drawClouds(Lcom/badlogic/gdx/graphics/g2d/SpriteBatch;)V
+
+    return-void
+.end method

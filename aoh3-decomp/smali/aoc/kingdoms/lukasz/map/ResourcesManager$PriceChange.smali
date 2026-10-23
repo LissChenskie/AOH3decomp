@@ -1,0 +1,38 @@
+.class public Laoc/kingdoms/lukasz/map/ResourcesManager$PriceChange;
+.super Ljava/lang/Object;
+.source "ResourcesManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Laoc/kingdoms/lukasz/map/ResourcesManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "PriceChange"
+.end annotation
+
+
+# instance fields
+.field public expiresTurnID:I
+
+.field public priceChange:F
+
+.field public resourceID:I
+
+
+# direct methods
+.method public constructor <init>(IFI)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Laoc/kingdoms/lukasz/map/ResourcesManager$PriceChange;->resourceID:I
+
+    iput p2, p0, Laoc/kingdoms/lukasz/map/ResourcesManager$PriceChange;->priceChange:F
+
+    iput p3, p0, Laoc/kingdoms/lukasz/map/ResourcesManager$PriceChange;->expiresTurnID:I
+
+    return-void
+.end method

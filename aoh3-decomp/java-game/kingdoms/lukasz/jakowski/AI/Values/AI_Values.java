@@ -1,0 +1,53 @@
+package aoc.kingdoms.lukasz.jakowski.AI.Values;
+
+import aoc.kingdoms.lukasz.jakowski.Game_Calendar;
+import aoc.kingdoms.lukasz.menu_element.graph.Graph;
+import com.badlogic.gdx.net.HttpStatus;
+
+/* JADX INFO: loaded from: /workspace/tmpdex/classes.dex */
+public class AI_Values {
+    public int BUDGET_INCREASE_TAXATION_IF_STABILITY_BELOW = 8;
+    public int BUDGET_INCREASE_TAXATION_IF_UNREST_IN_CAPITAL_BELOW = 8;
+    public int BUDGET_INCREASE_TAXATION_CHANCE = 17;
+    public int BUDGET_INCREASE_TAXATION_TURNS_MIN = 245;
+    public int BUDGET_INCREASE_TAXATION_TURNS_RANDOM = 450;
+    public int BUDGET_DECREASE_TAXATION_IF_UNREST_IN_CAPITAL_OVER = 47;
+    public int BUDGET_DECREASE_TAXATION_TURNS_MIN = Game_Calendar.NUM_OF_DAYS;
+    public int BUDGET_DECREASE_TAXATION_TURNS_RANDOM = Game_Calendar.NUM_OF_DAYS;
+    public int BUDGET_DECREASE_MILITARY_CHANCE = 14;
+    public int BUDGET_DECREASE_MILITARY_TURNS_MIN = 245;
+    public int BUDGET_DECREASE_MILITARY_TURNS_RANDOM = 850;
+    public int SCORE_BASE = 1000;
+    public int INVEST_LIMIT_PER_TURN = 80;
+    public int INVEST_LIMIT_PER_TURN_RANDOM_LIMIT = 20;
+    public int INVEST_RANDOM_IF_PROVINCES_BELOW = 4;
+    public int SCORE_INVEST_ECONOMY_RESOURCE_MIN = 100;
+    public int SCORE_INVEST_ECONOMY_RESOURCE_PRICE = HttpStatus.SC_OK;
+    public int SCORE_INVEST_ECONOMY_PER_INFRASTRUCTURE = 15;
+    public int SCORE_INVEST_ECONOMY_GROWTH_RATE = HttpStatus.SC_OK;
+    public int SCORE_DEVELOP_INFRASTRUCTURE_ECONOMY = 25;
+    public int SCORE_INVEST_ECONOMY_DISTANCE = HttpStatus.SC_OK;
+    public float SCORE_INVEST_ECONOMY_DISTANCE_W_GR = 0.3f;
+    public float SCORE_INVEST_ECONOMY_DISTANCE_W_DIS = 0.7f;
+    public float SCORE_INVEST_NON_CORE = -0.45f;
+    public float SCORE_INVEST_DIFFERENT_RELIGION = -0.35f;
+    public int UNLOCK_LEGACIES = 5;
+    public int COLONIZE_TOP_CIVS = 7;
+    public int COLONIZE_MIN_GOLD = 100;
+    public int COLONIZE_MIN_MANPOWER_X_REGIMENTS = 5;
+    public int COLONIZE_MIN_MANPOWER_X_REGIMENTS_TRIBAL = 3;
+    public int COLONIZE_X_REGIMENTS_RANDOM = 10;
+    public int COLONIZE_OVER_SEA_CHANCE = 16;
+    public int COLONIZE_PROVINCES_LIMIT = 16;
+    public int COLONIZE_PROVINCES_LIMIT_SEA = 10;
+    public int COLONIZE_PROVINCES_LIMIT_TRIBAL = 8;
+    public int COLONIZE_SCORE_PER_NEIGH_PROVINCE = Graph.ANIMATION_TIME;
+    public float COLONIZE_SCORE_PRIORITIZE_CONTINENT_MODIFIER = 10.0f;
+    public int CHANGE_GOVERNMENT_CITY_STATE_IF_PROVINCES_OVER = 4;
+    public int CHANGE_GOVERNMENT_TRIBAL_IF_PROVINCES_OVER = 29;
+    public int CHANGE_GOVERNMENT_MUST_BE_CHANGED_IF_TURN_OVER = 36500;
+    public int LOANS_LIMIT = 2;
+    public int TAKE_LOAN_ONLY_IF_TREASURY_BELOW = 325;
+    public int TAKE_LOAN_CHANCE_BUILDING_ECONOMY = 90;
+    public int TAKE_LOAN_CHANCE_INVEST_IN_ECONOMY = 90;
+}
